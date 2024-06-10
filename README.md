@@ -17,4 +17,4 @@ Por último, lo que se buscó fue crear una página la cual fuera confiable y op
 |23076002ucc.edu.ar|Agustin|
 
 ## Link
-[UCC BANK](https://github.com/UCC-LabCompu2/Proyecto2024-Bazan)
+[UCC BANK](https://ucc-labcompu2.github.io/Proyecto2024-Bazan/)
