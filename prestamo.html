@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Prestamos</title>
+    <meta content="Bazan Agustin" name="autor">
+    <meta content="Universidad Catolica de Cordoba Bank" name="descripcion">
+    <link rel="shortcut icon" href="../Imagenes/Uccb.png">
+    <link rel="stylesheet" href="estilo_operaciones.css" type="text/css">
+    <script type="text/javascript" src="Codigo.js"></script>
+</head>
+<body>
+<header>
+    <div class="title">
+        <h1 id="UCCB">
+            UCC BANK
+        </h1>
+    </div>
+    <div>
+        <img id="logo" src="../Imagenes/Uccb.png" alt="Logo de la pagina">
+    </div>
+</header>
+<nav>
+    <div>
+        <a href="../Index.html" target="_parent" class="botones_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            INICIO
+        </a>
+        <a href="../Operaciones.html" target="_parent" class="botones_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            OPERACIONES
+        </a>
+        <a href="../Informacion.html" target="_parent" class="botones_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            INFORMACIÓN
+        </a>
+        <a href="../Sucursales.html" target="_parent" class="botones_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            SUCURSALES
+        </a>
+    </div>
+</nav>
+<div class="animacion">
+    <h2 class="efecto" contenteditable="true">PRÉSTAMOS</h2>
+</div>
+<section>
+    <form name="Prestamos">
+        <div>
+            <label for="Inversion_P"></label>
+            <input type="number" size="50" name="Inversion_P" placeholder="Monto a solicitar" id="Inversion_P" required>
+        </div>
+        <div>
+            <label for="Renovacion_Cuotas"></label>
+            <input type="number" size="50" name="Renovacion_P" placeholder="Cuotas" id="Renovacion_Cuotas" required>
+        </div>
+        <h4>MES DE CREACIÓN</h4>
+        <div>
+            <label for="fecha_P"></label><input type="date" id="fecha_P" name="fecha_P" required>
+        </div>
+        <h4>DINERO A PAGAR</h4>
+        <div>
+            <label for="Total_P"></label><input type="number" id="Total_P" disabled>
+        </div>
+        <h4>VALOR DE LAS CUOTAS A PAGAR</h4>
+        <div>
+            <label for="Cuotas_P"></label><input type="number" id="Cuotas_P" disabled>
+        </div>
+        <div class="boton_calculo">
+            <button type="button" class="button" onclick="calcularPrestamo()">
+                Calcular
+            </button>
+        </div>
+    </form>
+    <div class="comprobante">
+        <h1>COMPROBANTE</h1>
+        <canvas id="comprobante_P" width="600px" height="400px">
+            <!--ANIMACION-->
+        </canvas>
+        <div class="datos">
+            <p>Mail: uccbcontact@uccb.com.ar</p>
+            <p>Télefono: +54 3525 61-1799</p>
+        </div>
+    </div>
+
+</section>
+<footer>
+    <a href="../Operaciones.html" target="_parent" class="botones_atras">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        ATRÁS
+    </a>
+</footer>
+</body>
+</html>
